@@ -30,7 +30,7 @@
   function layout(input,format,measure) {
     if(!FORMATS[format])throw new Error('Неизвестный формат.');
     if(typeof measure!=='function')throw new Error('Нужна функция измерения текста.');
-    const data={title:clean(input.title,180,'Название'),date:clean(input.date,36,'Дата и время'),performers:clean(input.performers,140,'Участники')};
+    const data={title:clean(input.title,180,'Название'),date:clean(input.date,36,'Дата и время')};
     const dimensions=FORMATS[format];const wide=format==='banner';
     const blocks=[];
     function add(id,text,box,min,max,lines,color='#e7c9ae') {
@@ -39,12 +39,10 @@
     }
     add('brand','ДОМ РАДИО',{x:56,y:40,width:360,height:55},24,30,1);
     add('date',data.date,{x:wide?880:560,y:40,width:wide?504:464,height:55},20,30,1);
-    add('category','КАМЕРНЫЙ КОНЦЕРТ',{x:56,y:wide?118:205,width:dimensions.width-112,height:wide?45:60},26,wide?30:40,1);
-    add('title',data.title,{x:56,y:wide?180:330,width:dimensions.width-112,height:wide?164:380},wide?34:44,wide?142:158,wide?3:5,'#171717');
-    add('performers',data.performers,{x:56,y:wide?376:810,width:wide?1110:968,height:wide?60:100},wide?20:28,wide?28:38,2);
-    if(!wide)add('place','ДОМ РАДИО · САНКТ-ПЕТЕРБУРГ',{x:56,y:966,width:820,height:50},20,24,1);
+    add('title',data.title,{x:56,y:wide?120:180,width:dimensions.width-112,height:wide?235:660},wide?28:34,wide?142:158,wide?5:9,'#171717');
+    add('place','ДОМ РАДИО · САНКТ-ПЕТЕРБУРГ',{x:56,y:wide?390:966,width:820,height:50},20,24,1);
     add('age','18+',{x:dimensions.width-128,y:wide?390:966,width:72,height:50},22,28,1);
-    return {version:'demo-1',format,...dimensions,data,fontFamily:FONT,background:'#a72524',blocks,notice:'Технический образец. Временный шрифт Arial. RGB, без вылетов; не для печати.'};
+    return {version:'demo-2',format,...dimensions,data,fontFamily:FONT,background:'#a72524',blocks,notice:'Технический образец. Arial, условные логотип и футер. RGB, без вылетов; не для печати.'};
   }
   function xml(value) {return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));}
   function svg(doc) {
