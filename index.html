@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a72524">
+  <meta name="description" content="Одно событие Дома Радио на разных носителях. Визуальная концепция системы выпуска афиш.">
+  <title>Дом Радио — одно событие, разные форматы</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#formats">К форматам</a>
+  <header class="masthead">
+    <a class="brand" href="#top" aria-label="Дом Радио — в начало"><img src="assets/logo.png" width="128" height="64" alt="Дом Радио"></a>
+    <span class="masthead-label">Система выпуска афиш / концепция</span>
+    <a href="#pilot" class="header-link">О пилоте <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="top">
+    <section class="intro wrap" aria-labelledby="headline">
+      <div><p class="eyebrow">Дом Радио · исследование форматов</p><h1 id="headline">Одно событие.<br><span>Разные форматы.</span></h1></div>
+      <div class="intro-note"><p>От афиши на улице<br>до анонса в телефоне.<br>С узнаваемым характером<br>Дома Радио.</p><a class="text-link" href="#formats">Рассмотреть комплект <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <figure class="hero wrap">
+      <img src="assets/city.png" width="1672" height="941" alt="Концептуальное размещение трёх красных афиш Дома Радио на сером металлическом фасаде" fetchpriority="high">
+      <figcaption><span>Один визуальный язык — в масштабе города</span><span>Сгенерированный мокап / условная городская среда</span></figcaption>
+    </figure>
+    <section id="formats" class="formats wrap" aria-labelledby="formats-title">
+      <div class="section-heading"><h2 id="formats-title">У каждого носителя<br>своя композиция.</h2><p>Один концерт — шесть способов его увидеть.<br>Нажмите на пример, чтобы рассмотреть детали.</p></div>
+      <div class="filterbar"><div class="filters" role="group" aria-label="Фильтр носителей"><button class="filter active" type="button" data-filter="all" aria-pressed="true">Все носители <span>6</span></button><button class="filter" type="button" data-filter="print" aria-pressed="false">Печать <span>1</span></button><button class="filter" type="button" data-filter="digital" aria-pressed="false">Экран <span>4</span></button><button class="filter" type="button" data-filter="city" aria-pressed="false">Город <span>1</span></button></div><span class="collection-label">Lachrimae / 21 июня</span></div>
+      <p id="filter-status" class="sr-only" aria-live="polite">Показано 6 носителей</p>
+      <div class="gallery">
+        <article class="card" data-category="print" data-id="poster">
+          <button class="card-button" type="button" aria-label="Рассмотреть печатную афишу">
+            <div class="scene print-scene"><div class="paper behind" aria-hidden="true"></div><img class="paper original" src="assets/poster.png" alt="Исходная афиша камерного концерта на листе бумаги" loading="lazy"><span class="scene-tag">A4 → A0</span><span class="zoom" aria-hidden="true">↗</span></div>
+            <div class="card-caption"><div><h3>Печатная афиша</h3><p>Иерархия, которую видно издалека</p></div><span class="format-ratio">1 : √2</span></div>
+          </button><p class="provenance">Реальная афиша дизайнера · исходный A4</p>
+        </article>
+        <article class="card" data-category="digital" data-id="square">
+          <button class="card-button" type="button" aria-label="Рассмотреть квадратный анонс">
+            <div class="scene square-scene"><div class="social-post"><div class="social-head"><span class="avatar">ДР</span><span>Дом Радио</span><span class="social-menu" aria-hidden="true">···</span></div><img src="assets/square.png" alt="Квадратный эскиз анонса Lachrimae" loading="lazy"><div class="social-footer"><span>Камерный концерт</span><span>21 июня · 19:00</span></div></div><span class="zoom" aria-hidden="true">↗</span></div>
+            <div class="card-caption"><div><h3>Анонс в ленте</h3><p>Ключевая информация в одном квадрате</p></div><span class="format-ratio">1 : 1</span></div>
+          </button><p class="provenance">Сгенерированный эскиз · условная лента</p>
+        </article>
+        <article class="card" data-category="digital" data-id="story">
+          <button class="card-button" type="button" aria-label="Рассмотреть вертикальную историю">
+            <div class="scene story-scene"><span class="story-word" aria-hidden="true">21<br>06</span><div class="phone"><div class="story-screen"><div class="story-progress" aria-hidden="true"></div><div class="story-account">Дом Радио <span>18+</span></div><img src="assets/poster.png" alt="Исходная афиша в вертикальном экране истории" loading="lazy"><span class="story-cta">О событии ↗</span></div></div><span class="scene-tag">Вертикальный экран</span><span class="zoom" aria-hidden="true">↗</span></div>
+            <div class="card-caption"><div><h3>История на телефоне</h3><p>Анонс с местом для перехода к событию</p></div><span class="format-ratio">9 : 16</span></div>
+          </button><p class="provenance">Исходная афиша в концепте экрана · без обрезки</p>
+        </article>
+        <article class="card" data-category="digital" data-id="banner">
+          <button class="card-button" type="button" aria-label="Рассмотреть широкий баннер">
+            <div class="scene banner-scene"><div class="banner-board"><img src="assets/banner.png" alt="Широкий красный баннер Lachrimae с датой концерта" loading="lazy"></div><div class="dimension-line" aria-hidden="true"><span>3</span><span>:</span><span>1</span></div><span class="zoom" aria-hidden="true">↗</span></div>
+            <div class="card-caption"><div><h3>Широкий баннер</h3><p>Главный акцент работает по горизонтали</p></div><span class="format-ratio">3 : 1</span></div>
+          </button><p class="provenance">Сгенерированный эскиз · новая композиция</p>
+        </article>
+        <article class="card" data-category="digital" data-id="website">
+          <button class="card-button" type="button" aria-label="Рассмотреть анонс на сайте">
+            <div class="scene website-scene"><div class="browser-mock"><div class="browser-chrome"><i></i><i></i><i></i><span>Афиша Дома Радио</span></div><div class="web-nav"><b>ДОМ РАДИО</b><span>События / О Доме</span></div><img src="assets/banner.png" alt="Концепт горизонтального анонса в разделе событий сайта" loading="lazy"><div class="web-copy"><span>21 июня / 19:00</span><h4>Камерный концерт<br>солистов и хора musicAeterna</h4><span class="web-cta">Подробнее о событии ↗</span></div></div><span class="zoom" aria-hidden="true">↗</span></div>
+            <div class="card-caption"><div><h3>Анонс на сайте</h3><p>Тот же концерт в цифровой афише</p></div><span class="format-ratio">Web</span></div>
+          </button><p class="provenance">Концепт размещения · не действующий сайт</p>
+        </article>
+        <article class="card" data-category="city" data-id="city">
+          <button class="card-button" type="button" aria-label="Рассмотреть афиши в городской среде">
+            <div class="scene city-scene"><img src="assets/city.png" alt="Афиши в уличных рамах на условном фасаде" loading="lazy"><span class="scene-tag">Городская среда</span><span class="zoom" aria-hidden="true">↗</span></div>
+            <div class="card-caption"><div><h3>Афиша в городе</h3><p>Характер бренда в большом масштабе</p></div><span class="format-ratio">Outdoor</span></div>
+          </button><p class="provenance">Сгенерированный мокап · не реальный фасад</p>
+        </article>
+      </div>
+    </section>
+    <section class="principle" aria-labelledby="principle-title"><div class="wrap principle-inner"><p class="eyebrow">Идея будущего инструмента</p><h2 id="principle-title">Информация меняется.<br><span>Характер остаётся.</span></h2><div class="principle-bottom"><p>Дизайнер задаёт правила композиции.<br>Продюсер заполняет карточку события.<br>Система собирает согласованный комплект.</p><p>Дата, название, участники — общие для всех носителей. Для каждой пропорции — своя вёрстка и проверка.</p></div></div></section>
+    <section id="pilot" class="pilot wrap" aria-labelledby="pilot-title"><p class="eyebrow">Следующий шаг</p><div class="pilot-grid"><h2 id="pilot-title">Проверим на одном<br>реальном событии.</h2><div><p class="pilot-copy">Выберем носители, соберём комплект и проверим его с дизайнером: композицию, редактируемый текст и требования к печати.</p><a class="text-link" href="https://docs.google.com/presentation/d/1y8TG3Vp6wu57RZohvEx09kuuZ4GN_uWR68H-G7kmOTY/edit" target="_blank" rel="noopener">Открыть предложение <span aria-hidden="true">↗</span></a></div></div><p class="scope-note">Сейчас перед вами визуальная концепция. Исходная афиша предоставлена дизайнером; квадрат, баннер и городское размещение созданы с помощью ИИ. Эти примеры показывают направление и не подтверждают работу движка или готовность файлов к печати.</p></section>
+  </main>
+  <footer class="wrap"><span>Дом Радио / витрина форматов</span><a href="#top">В начало ↑</a></footer>
+  <dialog id="detail" aria-labelledby="detail-title"><div class="dialog-shell"><header class="dialog-header"><div><p class="eyebrow" id="detail-kind"></p><h2 id="detail-title"></h2></div><button class="close" type="button" aria-label="Закрыть просмотр">×</button></header><div class="view-switch" role="group" aria-label="Способ просмотра"><button type="button" data-view="context" class="active" aria-pressed="true">На носителе</button><button type="button" data-view="artwork" aria-pressed="false">Макет</button></div><div id="detail-preview"></div><div class="detail-footer"><p id="detail-description"></p><p id="detail-origin"></p></div></div></dialog>
+</body>
+</html>
