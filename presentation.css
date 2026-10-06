@@ -93,6 +93,8 @@
 .deck-ready .demo-status{margin-top:20px}
 .deck-ready .demo-bottom{margin-top:16px}
 .deck-ready .slide-delivery .output-section{margin-top:24px;padding-block:28px}
+.deck-ready .slide-delivery{background:#171717}
+.deck-ready .slide-delivery .slide-kicker{color:#aaa}
 .deck-ready .output-section>.wrap>h2{font-size:clamp(35px,4vw,56px)}
 .deck-ready .output-section .eyebrow{margin-bottom:16px}
 .deck-ready .output-grid{margin-top:24px;gap:35px}
